@@ -25,22 +25,22 @@ const LoginHook = () => {
 
   const login = async (email, password, saveId) => {
     try {
-      await api.post('auth/sign-in', {
-        email,
-        password,
-      });
+      // await api.post('auth/sign-in', {
+      //   email,
+      //   password,
+      // });
 
-      const user = getUserFromCookie();
-      if (!user) {
-        throw new Error("user cookie doesn't exist");
-      }
+      // const user = getUserFromCookie();
+      // if (!user) {
+      //   throw new Error("user cookie doesn't exist");
+      // }
 
       dispatch(
         loginProcess({
           info: {
-            id: user.id,
-            nickname: user.nickname,
-            email: email,
+            id: 'test',
+            nickname: 'test',
+            email: 'test@test.com',
             prividerType: 'web',
           },
           loginStatus: 'login',

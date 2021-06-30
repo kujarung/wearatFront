@@ -1,8 +1,9 @@
 {
+  "homepage": "http://kujarung.github.io/wearatFront",
   "name": "wearat",
   "description": "wearat web service",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
@@ -65,6 +66,6 @@
     "resolve-url-loader": "^4.0.0"
   },
   "engines": {
-    "node": "14.x"
+    "node": "12.x"
   }
 }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Address from '../../components/Address';
 import useEditUserInfo from 'hooks/useEditUserInfo';
 import Lnb from 'components/layout/Lnb';
-import { checkNicknameApi } from 'utils/UserReducer';
+// import { checkNicknameApi } from 'utils/UserReducer';
 import ImageUpload from 'components/ImageUpload';
 
 const Mypage = () => {
@@ -187,7 +187,7 @@ const Mypage = () => {
                       className="ml16 check-btn-style1"
                       onClick={(e) => {
                         e.preventDefault();
-                        checkNicknameApi(user.nickname, dispatch);
+                        // checkNicknameApi(user.nickname, dispatch);
                       }}
                     >
                       중복확인

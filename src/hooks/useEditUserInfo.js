@@ -6,11 +6,11 @@ const useEditUserInfo = () => {
   const [user, dispatch] = useReducer(userReducer, {});
 
   useEffect(() => {
-    const getMydata = async () => {
-      const { data } = await api.get('user');
-      dispatch({ type: 'INIT', data });
-    };
-    getMydata();
+    // const getMydata = async () => {
+    //   const { data } = await api.get('user');
+    //   dispatch({ type: 'INIT', data });
+    // };
+    // getMydata();
   }, []);
 
   return [user, dispatch];
